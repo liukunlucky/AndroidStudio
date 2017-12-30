@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fadingEdge="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        
+		
+		<!-- Remaining_Pack(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Remaining_Pack" />
+				
+				<TextView
+					android:id="@+id/tv_data_Remaining_Pack"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:textSize="16sp"
+					android:gravity="end" />	
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_Remaining_Pack"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_Remaining_Pack"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="200" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="200" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- Lid_State(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="Lid_State" />
+
+				<TextView
+					android:id="@+id/tv_data_Lid_State"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- D_Remaining_Pack(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="D_Remaining_Pack" />
+
+				<TextView
+					android:id="@+id/tv_data_D_Remaining_Pack"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- Dosing_Time(扩展可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="Dosing_Time" />
+				
+				<EditText
+					android:id="@+id/et_extend_Dosing_Time"
+					android:layout_width="200dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="#EEEEEE"
+					android:digits="0123456789abcdefABCDEF"
+					android:gravity="start"
+					android:imeOptions="actionDone"
+					android:inputType="textUri|textMultiLine"
+					android:minLines="3" />
+		</RelativeLayout>
+	
+	
+    </LinearLayout>
+
+</ScrollView>
